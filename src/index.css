@@ -5,7 +5,9 @@
 :root {
   --primaryColor: #ffffff;
   --secondaryColor: #2a2a2a;
+  --primaryFontColor: #222222;
   --thirdColor: #93288e;
+  --additionalColor: #92278f;
   --workSans: "Work Sans", sans-serif;
   --poppins: "Poppins", sans-serif;
   --waterBrush: "Water Brush", cursive;
@@ -78,19 +80,24 @@
     -ms-transition: transform ease 0.5s;
     -o-transition: transform ease 0.5s;
   }
-}
+  .nav ul li:hover::after {
+    transition: transform ease 0.3s;
+    background-color: var(--primaryColor);
+    transform-origin: right;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transition: transform ease 0.3s;
+    -moz-transition: transform ease 0.3s;
+    -ms-transition: transform ease 0.3s;
+    -o-transition: transform ease 0.3s;
+  }
 
-.nav ul li:hover::after {
-  transition: transform ease 0.3s;
-  background-color: var(--primaryColor);
-  transform-origin: right;
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  -webkit-transition: transform ease 0.3s;
-  -moz-transition: transform ease 0.3s;
-  -ms-transition: transform ease 0.3s;
-  -o-transition: transform ease 0.3s;
+  #card {
+    box-shadow: 0px 4px 34px 0px rgba(250, 134, 183, 0.4);
+    -webkit-box-shadow: 0px 4px 34px 0px rgba(250, 134, 183, 0.4);
+    -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 183, 0.4);
+  }
 }

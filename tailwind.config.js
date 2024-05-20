@@ -15,6 +15,8 @@ export default {
         primaryColor: "var(--primaryColor)",
         secondaryColor: "var(--secondaryColor)",
         thirdColor: "var(--thirdColor)",
+        primaryFontColor: "var(--primaryFontColor)",
+        additionalColor: "var(--additionalColor)",
       },
     },
   },
