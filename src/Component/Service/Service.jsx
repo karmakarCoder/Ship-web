@@ -1,7 +1,7 @@
 import React from "react";
-import serve1 from "../../assets/serve1.png";
-import serve2 from "../../assets/serve2.png";
-import serve3 from "../../assets/serve3.png";
+import serve1 from "../../assets/Service/serve1.png";
+import serve2 from "../../assets/Service/serve2.png";
+import serve3 from "../../assets/Service/serve3.png";
 const Service = () => {
   return (
     <>

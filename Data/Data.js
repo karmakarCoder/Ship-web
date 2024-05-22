@@ -137,7 +137,7 @@ export const srilankaData = [
     description:
       "It is likely that the area around Sigiriya was inhabited since prehistoric times.",
     image:
-      "https://lh3.googleusercontent.com/p/AF1QipMS6ryNJjdQQNdAI0SZTT1j9vgRimN7iDtVgUm2=s680-w680-h510",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Beauty_of_Sigiriya_by_Binuka.jpg",
     rating: "5.0",
   },
   {
@@ -146,7 +146,7 @@ export const srilankaData = [
     description:
       "Sri Dalada Maligawa, commonly known in English as the Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy, Sri Lanka",
     image:
-      "https://lh3.googleusercontent.com/p/AF1QipOeRfjUm-OwTpVJsqYiapIA3h0dVLob6T9WILIC=s680-w680-h510",
+      "https://srilankamirror.com/wp-content/uploads/2022/11/TempleofToothRelic_DaladaMaligawa_Kandy_1200px_22_11_27.jpg",
     rating: "5.0",
   },
   {
@@ -155,7 +155,7 @@ export const srilankaData = [
     description:
       "Galle Fort, in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese, then extensively fortified by the Dutch during the 17th century from 1649 onwards",
     image:
-      "https://lh3.googleusercontent.com/p/AF1QipObsU-GHqbTwIfzaz9cpBsDcRJ6G6QBKkQ04TI7=s680-w680-h510",
+      "https://airlinescrewtours.com/wp-content/uploads/2020/09/Galle-fort-7.jpg",
     rating: "4.4",
   },
   {
@@ -164,7 +164,76 @@ export const srilankaData = [
     description:
       "Dambulla cave temple, also known as the Golden Temple of Dambulla, is a World Heritage Site in Sri Lanka, situated in the central part of the country.",
     image:
-      "https://lh3.googleusercontent.com/p/AF1QipPRdEwWOBSfRcchnYo83DCU38l4uXrpWNPi9_vn=s680-w680-h510",
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/ac/22.jpg",
     rating: "4.9",
+  },
+];
+
+export const CruiseInfo = [
+  {
+    id: 1,
+    name: "Marine Corp",
+    description: "3 Days 4 Nights",
+    date: "Jan 26, 2022",
+    departure: "Los Vegas",
+    image:
+      "https://www.fincantieri.com/globalassets/common/sliders/key-numbers-slider/02.prodotti-e-servizi/ficantieri_navi_da_crociera_7.jpg",
+    rating: "5.0",
+    price: "$150",
+  },
+  {
+    id: 2,
+    name: "Western Caribbean Cruise",
+    description: "7 Nights",
+    date: "Feb 22, 2022",
+    departure: "Tampa, Florida",
+    image:
+      "https://www.carnival.com/-/media/images/ships/carnival-luminosa-open-for-sale-hero-mobile.jpg",
+    rating: "4.4",
+    price: "$300",
+  },
+  {
+    id: 3,
+    name: "Marine Corp",
+    description: "3 Days 4 Nights",
+    date: "Jan 26, 2022",
+    departure: "Los Vegas",
+    image:
+      "https://www.travelandleisure.com/thmb/z1MUqzLKgATp0dY-7ystuus0Itg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-carnival-celebration-CARNIVALSHIPS1223-1e1feaf195964a5d912029893bfaa129.jpg",
+    rating: "5.0",
+    price: "$150",
+  },
+  {
+    id: 4,
+    name: "Marine Corp",
+    description: "3 Days 4 Nights",
+    date: "Jan 26, 2022",
+    departure: "Los Vegas",
+    image:
+      "https://www.travelandleisure.com/thmb/PIrrNVmeeMvIhVqmFR2EWCrSug4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/rc-wonder-of-the-seas-sunset-aerial-LRGSTSHIP0422-8230b27121c3438b9984b9dc63877937.jpg",
+    rating: "5.0",
+    price: "$150",
+  },
+  {
+    id: 5,
+    name: "Marine Corp",
+    description: "3 Days 4 Nights",
+    date: "Jan 26, 2022",
+    departure: "Los Vegas",
+    image:
+      "https://www.hindustantimes.com/ht-img/img/2024/01/22/1600x900/ROYAL-CARIBBEAN-PREVIEW-92_1705924847943_1705924876557.jpg",
+    rating: "5.0",
+    price: "$150",
+  },
+  {
+    id: 6,
+    name: "Marine Corp",
+    description: "3 Days 4 Nights",
+    date: "Jan 26, 2022",
+    departure: "Los Vegas",
+    image:
+      "https://www.carnival.com/-/media/images/ships/cq/carnival-conquest-mobile-3.jpg",
+    rating: "5.0",
+    price: "$150",
   },
 ];

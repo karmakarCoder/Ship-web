@@ -6,8 +6,15 @@
   --primaryColor: #ffffff;
   --secondaryColor: #2a2a2a;
   --primaryFontColor: #222222;
+  --secondaryFontColor: #343434;
+  --addiTionalFontColor: #7a7a7a;
+  --thirdFontColor: #1e1e1e;
   --thirdColor: #93288e;
   --additionalColor: #92278f;
+  --additionalBgColor: #fff7ff;
+  --protocolsBgColor: #fdf0ee;
+  --protocolsFontColor: #484848;
+  --extraFontColor: #191825;
   --workSans: "Work Sans", sans-serif;
   --poppins: "Poppins", sans-serif;
   --waterBrush: "Water Brush", cursive;
@@ -96,12 +103,18 @@
   }
 
   #card {
-    box-shadow: 0px 4px 34px 0px rgba(250, 134, 183, 0.4);
-    -webkit-box-shadow: 0px 4px 34px 0px rgba(250, 134, 183, 0.4);
-    -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 183, 0.4);
+    box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.199);
+    -webkit-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.247);
+    -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.253);
   }
 
   #banner {
     background-image: url(/src/assets/hero.png);
+  }
+
+  #cruiseCard {
+    box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.199);
+    -webkit-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.247);
+    -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.253);
   }
 }
