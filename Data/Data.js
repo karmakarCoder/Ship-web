@@ -237,3 +237,52 @@ export const CruiseInfo = [
     price: "$150",
   },
 ];
+
+import menImg1 from "../src/assets/Reviews/men1.jpg";
+import menImg2 from "../src/assets/Reviews/men2.jpg";
+import menImg3 from "../src/assets/Reviews/men3.jpeg";
+import menImg4 from "../src/assets/Reviews/men4.jpg";
+import women from "../src/assets/Reviews/women.webp";
+
+export const reviewData = [
+  {
+    id: 1,
+    name: "Michael I. Purdy",
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    location: "Los Vegas",
+    image: menImg1,
+  },
+  {
+    id: 2,
+    name: "Graciela E. Wolfe",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    location: "Florida",
+    image: menImg2,
+  },
+  {
+    id: 3,
+    name: "Elizabeth R. Burke",
+    description:
+      "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.",
+    location: "Clarks",
+    image: women,
+  },
+  {
+    id: 4,
+    name: "Kathleen J. Moore",
+    location: "Clarks",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    image: menImg3,
+  },
+  {
+    id: 5,
+    name: "Kenneth T. Towner",
+    location: "San Francisco",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: menImg4,
+  },
+];
