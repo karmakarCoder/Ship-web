@@ -1,9 +1,10 @@
-import React from "react";
+import { React, useEffect, useState, useRef } from "react";
 import quotesImg1 from "../../assets/Quotes/1.png";
 import quotesImg2 from "../../assets/Quotes/2.png";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { reviewData } from "../../../Data/Data";
-
+import img from "../../assets/Photo-Gallery/gallery2.png";
+import Slider from "react-slick";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,12 +12,75 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/navigation";
-import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import "slick-carousel/slick/slick.css";
 
 // import required modules
-import { EffectCreative, Navigation, EffectFade } from "swiper/modules";
+import { EffectCreative, Navigation, Pagination } from "swiper/modules";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "red",
+        width: "50px",
+        height: "50px",
+        position: "absolute",
+        top: "20px",
+        right: "0",
+        borderRadius: "50%",
+        zIndex: "1",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "green",
+        height: "50px",
+        width: "50px",
+        position: "absolute",
+        top: "20px",
+        left: "0",
+        zIndex: "1",
+        borderRadius: "50%",
+      }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Review_Testimonials = () => {
+  const [nav1, setNav1] = useState(null);
+  const [nav2, setNav2] = useState(null);
+  let sliderRef1 = useRef(null);
+  let sliderRef2 = useRef(null);
+
+  useEffect(() => {
+    setNav1(sliderRef1);
+    setNav2(sliderRef2);
+  }, []);
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
     <>
       <div className="py-[60px]">
@@ -48,13 +112,12 @@ const Review_Testimonials = () => {
                 </div>
                 <div>
                   <Swiper
-                    effect={"fade"}
-                    modules={[EffectFade, Navigation]}
+                    slidesPerView={1}
+                    modules={[Pagination, Navigation]}
                     navigation={{
                       prevEl: ".prev-arrow",
                       nextEl: ".next-arrow",
                     }}
-                    className="fadeSwiper"
                   >
                     {reviewData?.map((data) => (
                       <SwiperSlide key={data.id}>
@@ -79,18 +142,24 @@ const Review_Testimonials = () => {
                     creativeEffect={{
                       prev: {
                         shadow: false,
-                        translate: ["-120%", 0, -500],
+                        origin: "left center",
+                        translate: ["-5%", 0, -200],
+                        rotate: [0, 100, 0],
                       },
                       next: {
-                        shadow: false,
-                        translate: ["120%", 0, -500],
+                        origin: "right center",
+                        translate: ["5%", 0, -200],
+                        rotate: [0, -100, 0],
                       },
                     }}
                     modules={[EffectCreative, Navigation]}
                     className="mySwiper2"
                   >
                     {reviewData?.map((data) => (
-                      <SwiperSlide className="flex items-center gap-x-3">
+                      <SwiperSlide
+                        className="flex items-center gap-x-3"
+                        key={data.id}
+                      >
                         <div className="h-[80px] w-[80px] overflow-hidden rounded-full">
                           <img
                             src={data.image}
@@ -117,6 +186,90 @@ const Review_Testimonials = () => {
                       <FaAngleRight />
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg">
+                <Slider
+                  {...settings}
+                  asNavFor={nav2}
+                  ref={(slider) => (sliderRef1 = slider)}
+                >
+                  <div>
+                    <img
+                      src={img}
+                      alt=""
+                      className="h-[300px] w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <img src={img} alt="" className="h-[300px] w-full" />
+                  </div>
+                  <div>
+                    <img src={img} alt="" className="h-[300px] w-full" />
+                  </div>
+                  <div>
+                    <img src={img} alt="" className="h-[300px] w-full" />
+                  </div>
+                  <div>
+                    <img src={img} alt="" className="h-[300px] w-full" />
+                  </div>
+                </Slider>
+                <div className="">
+                  <Slider
+                    asNavFor={nav1}
+                    ref={(slider) => (sliderRef2 = slider)}
+                    slidesToShow={4}
+                    slidesToScroll={4}
+                    swipeToSlide={true}
+                    focusOnSelect={true}
+                    arrows={true}
+                    nextArrow={<SampleNextArrow />}
+                    prevArrow={<SamplePrevArrow />}
+                    className="seconSlider"
+                  >
+                    <div>
+                      <img
+                        src={img}
+                        alt=""
+                        className="h-[90px] w-[90px] object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src={img}
+                        alt=""
+                        className="h-[90px] w-[90px] object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src={img}
+                        alt=""
+                        className="h-[90px] w-[90px] object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src={img}
+                        alt=""
+                        className="h-[90px] w-[90px] object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src={img}
+                        alt=""
+                        className="h-[90px] w-[90px] object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src={img}
+                        alt=""
+                        className="h-[90px] w-[90px] object-cover"
+                      />
+                    </div>
+                  </Slider>
                 </div>
               </div>
             </div>

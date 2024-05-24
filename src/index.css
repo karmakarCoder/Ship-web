@@ -124,11 +124,29 @@
     width: 324px !important;
   }
 
-  .fadeSwiper .swiper-slide-visible p {
-    opacity: 1 !important;
+  .videoSlider {
+    width: 100%;
   }
 
-  .fadeSwiper .swiper-slide-prev p {
-    opacity: 0;
+  .videoSlider .swiper-slide-next .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .mySwiper4 .swiper-slide-visible {
+    opacity: 0.4;
+  }
+
+  .seconSlider .slick-list {
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+
+  .seconSlider .slick-active {
+    width: 110px !important;
+    margin-left: 0 !important;
+  }
+
+  .seconSlider .slick-slide {
+    margin-left: 71px !important;
   }
 }
