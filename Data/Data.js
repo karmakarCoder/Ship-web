@@ -286,3 +286,27 @@ export const reviewData = [
     image: menImg4,
   },
 ];
+
+export const footerProduct = [
+  "Features",
+  "Pricing",
+  "Case studies",
+  "Reviews",
+  "Updates",
+];
+
+export const footerCompany = [
+  "About",
+  "Contact us",
+  "Careers",
+  "Culture",
+  "Blog",
+];
+
+export const footerSupport = [
+  "Getting started",
+  "Help center",
+  "Server status",
+  "Report a bug",
+  "Chat support",
+];

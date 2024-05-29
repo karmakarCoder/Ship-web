@@ -4,9 +4,11 @@ import quotesImg2 from "../../assets/Quotes/2.png";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { reviewData } from "../../../Data/Data";
 import img from "../../assets/Photo-Gallery/gallery2.png";
+import dummyVideoImg from "../../assets/video/video.png";
 import Slider from "react-slick";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Fade } from "react-awesome-reveal";
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,46 +21,58 @@ import "slick-carousel/slick/slick.css";
 import { EffectCreative, Navigation, Pagination } from "swiper/modules";
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
-      className={className}
+      className="group bg-primaryColor shadow-md transition-all hover:bg-thirdColor active:bg-[#6e2a6b]"
       style={{
         ...style,
-        display: "block",
-        background: "red",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         width: "50px",
         height: "50px",
         position: "absolute",
-        top: "20px",
-        right: "0",
+        top: "35px",
+        right: "-13px",
         borderRadius: "50%",
         zIndex: "1",
+        cursor: "pointer",
       }}
       onClick={onClick}
-    />
+    >
+      <div className="text-2xl text-thirdColor group-hover:text-primaryColor">
+        <FaAngleRight />
+      </div>
+    </div>
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <div
-      className={className}
+      className="group cursor-pointer bg-primaryColor shadow-md transition-all hover:bg-thirdColor active:bg-[#6e2a6b]"
       style={{
         ...style,
-        display: "block",
-        background: "green",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+
         height: "50px",
         width: "50px",
         position: "absolute",
-        top: "20px",
-        left: "0",
+        top: "35px",
+        left: "-13px",
         zIndex: "1",
         borderRadius: "50%",
       }}
       onClick={onClick}
-    />
+    >
+      <div className="text-2xl text-thirdColor group-hover:text-primaryColor">
+        <FaAngleLeft />
+      </div>
+    </div>
   );
 }
 
@@ -81,9 +95,10 @@ const Review_Testimonials = () => {
     slidesToScroll: 1,
     arrows: false,
   };
+
   return (
     <>
-      <div className="py-[60px]">
+      <Fade direction="up" triggerOnce="true" className="py-[60px]">
         <div className="container">
           <div>
             {/* heading */}
@@ -106,7 +121,10 @@ const Review_Testimonials = () => {
             </div>
             {/* Reviews */}
             <div className="mt-8 flex h-[450px] items-center justify-between">
-              <div className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg">
+              <div
+                id="reviewCard"
+                className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg"
+              >
                 <div>
                   <img src={quotesImg1} alt={quotesImg1} />
                 </div>
@@ -188,94 +206,107 @@ const Review_Testimonials = () => {
                   </div>
                 </div>
               </div>
-              <div className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg">
+              <div
+                id="reviewCard"
+                className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg"
+              >
                 <Slider
                   {...settings}
                   asNavFor={nav2}
                   ref={(slider) => (sliderRef1 = slider)}
+                  className="slide1"
                 >
-                  <div>
+                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                    <img
+                      src={dummyVideoImg}
+                      alt=""
+                      className="h-full w-full  object-cover"
+                    />
+                  </div>
+                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                    <img
+                      src={dummyVideoImg}
+                      alt=""
+                      className="h-full w-full  object-cover"
+                    />
+                  </div>
+                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                    <img
+                      src={dummyVideoImg}
+                      alt=""
+                      className="h-full w-full  object-cover"
+                    />
+                  </div>
+                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                    <img
+                      src={dummyVideoImg}
+                      alt=""
+                      className="h-full w-full  object-cover"
+                    />
+                  </div>
+                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                    <img
+                      src={dummyVideoImg}
+                      alt=""
+                      className="h-full w-full  object-cover"
+                    />
+                  </div>
+                </Slider>
+
+                <Slider
+                  asNavFor={nav1}
+                  ref={(slider) => (sliderRef2 = slider)}
+                  slidesToShow={4}
+                  slidesToScroll={1}
+                  swipeToSlide={true}
+                  focusOnSelect={true}
+                  dots={false}
+                  arrows={true}
+                  className="slide2"
+                  nextArrow={<SampleNextArrow />}
+                  prevArrow={<SamplePrevArrow />}
+                >
+                  <div className="overflow-hidden">
                     <img
                       src={img}
                       alt=""
-                      className="h-[300px] w-full object-cover"
+                      className="h-[90px]  w-[90px]  rounded-[10px] object-cover"
                     />
                   </div>
-                  <div>
-                    <img src={img} alt="" className="h-[300px] w-full" />
+                  <div className="overflow-hidden">
+                    <img
+                      src={img}
+                      alt=""
+                      className="h-[90px]  w-[90px]  rounded-[10px] object-cover"
+                    />
                   </div>
-                  <div>
-                    <img src={img} alt="" className="h-[300px] w-full" />
+                  <div className="overflow-hidden">
+                    <img
+                      src={img}
+                      alt=""
+                      className="h-[90px]  w-[90px]  rounded-[10px] object-cover"
+                    />
                   </div>
-                  <div>
-                    <img src={img} alt="" className="h-[300px] w-full" />
+                  <div className="overflow-hidden">
+                    <img
+                      src={img}
+                      alt=""
+                      className="h-[90px]  w-[90px]  rounded-[10px] object-cover"
+                    />
                   </div>
-                  <div>
-                    <img src={img} alt="" className="h-[300px] w-full" />
+                  <div className="overflow-hidden">
+                    <img
+                      src={img}
+                      alt=""
+                      className="h-[90px]  w-[90px]  rounded-[10px] object-cover"
+                    />
                   </div>
                 </Slider>
-                <div className="">
-                  <Slider
-                    asNavFor={nav1}
-                    ref={(slider) => (sliderRef2 = slider)}
-                    slidesToShow={4}
-                    slidesToScroll={4}
-                    swipeToSlide={true}
-                    focusOnSelect={true}
-                    arrows={true}
-                    nextArrow={<SampleNextArrow />}
-                    prevArrow={<SamplePrevArrow />}
-                    className="seconSlider"
-                  >
-                    <div>
-                      <img
-                        src={img}
-                        alt=""
-                        className="h-[90px] w-[90px] object-cover"
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={img}
-                        alt=""
-                        className="h-[90px] w-[90px] object-cover"
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={img}
-                        alt=""
-                        className="h-[90px] w-[90px] object-cover"
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={img}
-                        alt=""
-                        className="h-[90px] w-[90px] object-cover"
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={img}
-                        alt=""
-                        className="h-[90px] w-[90px] object-cover"
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={img}
-                        alt=""
-                        className="h-[90px] w-[90px] object-cover"
-                      />
-                    </div>
-                  </Slider>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Fade>
     </>
   );
 };

@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { LuCalendar } from "react-icons/lu";
 import { CiSearch } from "react-icons/ci";
 import { GoArrowDown } from "react-icons/go";
+import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
@@ -21,13 +22,19 @@ const Banner = () => {
             "
             >
               <div className="h-[2px] w-[72px] bg-primaryColor"></div>
-              <h1 className="font-waterBrush text-[46px] font-normal text-primaryColor">
-                Explorer and Travel
-              </h1>
+
+              <Fade direction="down" triggerOnce="true">
+                <h1 className="font-waterBrush text-[46px] font-normal text-primaryColor">
+                  Explorer and Travel
+                </h1>
+              </Fade>
             </div>
-            <h2 className="pb-8 font-workSans text-[86px] font-normal text-primaryColor">
-              Let’s Go Now
-            </h2>
+            <Fade direction="down" triggerOnce="true">
+              <h2 className="pb-8 font-workSans text-[86px] font-normal text-primaryColor">
+                Let’s Go Now
+              </h2>
+            </Fade>
+
             <p className="max-w-[580px] font-poppins text-base font-normal leading-6 text-primaryColor">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text

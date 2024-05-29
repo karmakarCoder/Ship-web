@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "../../Common/Card";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import { indiaData, dubaiData, srilankaData } from "../../../Data/Data";
+import { Fade } from "react-awesome-reveal";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -38,15 +39,19 @@ const Destination = () => {
   };
   return (
     <>
-      <div className="bg-[#f8f8f842] py-20">
+      <div id="destination" className="bg-[#f8f8f842] py-20">
         <div className="container">
           <div className="pb-8 text-center">
-            <p className="pb-4 font-poppins text-lg font-semibold uppercase text-thirdColor">
-              choose your next destination
-            </p>
-            <h2 className="text-[44px] font-light uppercase text-primaryFontColor">
-              Explore top destination
-            </h2>
+            <Fade direction="down" triggerOnce="true">
+              <p className="pb-4 font-poppins text-lg font-semibold uppercase text-thirdColor">
+                choose your next destination
+              </p>
+            </Fade>
+            <Fade direction="up" triggerOnce="true">
+              <h2 className="text-[44px] font-light uppercase text-primaryFontColor">
+                Explore top destination
+              </h2>
+            </Fade>
           </div>
           <div className="flex items-center justify-between pb-8">
             <div className="flex items-center overflow-hidden rounded-[20px] border-[7px] border-[#fef0ef]">

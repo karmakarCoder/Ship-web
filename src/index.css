@@ -15,6 +15,8 @@
   --protocolsBgColor: #fdf0ee;
   --protocolsFontColor: #484848;
   --extraFontColor: #191825;
+  --emailBgColor: #fef0ef;
+  --placeholderColor: #5b5f62;
   --workSans: "Work Sans", sans-serif;
   --poppins: "Poppins", sans-serif;
   --waterBrush: "Water Brush", cursive;
@@ -118,35 +120,14 @@
     -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.253);
   }
 
-  .mySwiper2 {
-    margin-left: 0;
-    margin-right: 0;
-    width: 324px !important;
+  #reviewCard {
+    box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.199);
+    -webkit-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.247);
+    -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.253);
   }
 
-  .videoSlider {
-    width: 100%;
-  }
-
-  .videoSlider .swiper-slide-next .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-
-  .mySwiper4 .swiper-slide-visible {
-    opacity: 0.4;
-  }
-
-  .seconSlider .slick-list {
+  .slide2 .slick-track {
+    margin-left: 26px;
     margin-top: 20px;
-    margin-left: 70px;
-  }
-
-  .seconSlider .slick-active {
-    width: 110px !important;
-    margin-left: 0 !important;
-  }
-
-  .seconSlider .slick-slide {
-    margin-left: 71px !important;
   }
 }

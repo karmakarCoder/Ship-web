@@ -24,6 +24,8 @@ export default {
         protocolsFontColor: "var(--protocolsFontColor)",
         thirdFontColor: "var(--thirdFontColor)",
         extraFontColor: "var(--extraFontColor)",
+        emailBgColor: "var(--emailBgColor)",
+        placeholderColor: "var(--placeholderColor)",
       },
     },
   },
