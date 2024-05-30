@@ -39,47 +39,56 @@ const Destination = () => {
   };
   return (
     <>
-      <div id="destination" className="bg-[#f8f8f842] py-20">
+      <div
+        id="destination"
+        className="bg-[#f8f8f842] px-4 py-10 md:py-20 lg:px-0"
+      >
         <div className="container">
           <div className="pb-8 text-center">
             <Fade direction="down" triggerOnce="true">
-              <p className="pb-4 font-poppins text-lg font-semibold uppercase text-thirdColor">
+              <p className="text-md pb-4 font-poppins font-semibold uppercase text-thirdColor md:text-lg">
                 choose your next destination
               </p>
             </Fade>
             <Fade direction="up" triggerOnce="true">
-              <h2 className="text-[44px] font-light uppercase text-primaryFontColor">
+              <h2 className="text-[32px] font-light uppercase text-primaryFontColor md:text-[44px]">
                 Explore top destination
               </h2>
             </Fade>
           </div>
-          <div className="flex items-center justify-between pb-8">
+          <div className="flex flex-wrap items-end justify-end gap-y-6 pb-8  md:items-center md:justify-between md:gap-y-0">
             <div className="flex items-center overflow-hidden rounded-[20px] border-[7px] border-[#fef0ef]">
               <div
-                className={`w-[200px] cursor-pointer bg-primaryColor py-3 text-center ${india ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
+                className={`w-[180px] cursor-pointer bg-primaryColor py-3 text-center md:w-[200px]  ${india ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
                 onClick={HandleIndia}
               >
-                <span className="text-base font-semibold">India</span>
+                <span className="text-sm font-semibold md:text-base">
+                  India
+                </span>
               </div>
               <div
-                className={`w-[200px] cursor-pointer bg-primaryColor py-3 text-center  ${dubai ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
+                className={`w-[180px] cursor-pointer bg-primaryColor py-3 text-center md:w-[200px]  ${dubai ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
                 onClick={HandleDubai}
               >
-                <span className="text-base font-semibold">Dubai</span>
+                <span className="text-sm font-semibold md:text-base">
+                  Dubai
+                </span>
               </div>
               <div
-                className={`w-[200px] cursor-pointer bg-primaryColor py-3 text-center  ${sriLanka ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
+                className={`w-[180px] cursor-pointer bg-primaryColor py-3 text-center md:w-[200px]  ${sriLanka ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
                 onClick={HandleSrilanka}
               >
-                <span className="text-base font-semibold">Sri Lanka</span>
+                <span className="text-sm font-semibold md:text-base">
+                  Sri Lanka
+                </span>
               </div>
             </div>
             <div>
               <div className="flex items-center gap-x-7">
-                <div className="prev-arrow  z-10 flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-4xl text-thirdColor transition-all hover:bg-thirdColor hover:text-[#F6F5F5]">
+                <div className="prev-arrow  z-10 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-3xl text-thirdColor transition-all hover:bg-thirdColor hover:text-[#F6F5F5] md:h-[50px] md:w-[50px] md:text-4xl">
                   <RiArrowLeftSLine />
                 </div>
-                <div className="next-arrow z-10 flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-4xl text-thirdColor transition-all hover:bg-thirdColor hover:text-[#F6F5F5]">
+                <div className="next-arrow z-10 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-3xl text-thirdColor transition-all hover:bg-thirdColor  hover:text-[#F6F5F5] md:h-[50px] md:w-[50px] md:text-4xl">
                   <RiArrowRightSLine />
                 </div>
               </div>
@@ -94,6 +103,24 @@ const Destination = () => {
               navigation={{
                 prevEl: ".prev-arrow",
                 nextEl: ".next-arrow",
+              }}
+              breakpoints={{
+                250: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                375: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
               }}
             >
               {indiadata?.map((data) => (

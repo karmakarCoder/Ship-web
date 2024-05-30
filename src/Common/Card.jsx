@@ -7,12 +7,12 @@ const Card = ({ title, placeimg, des, star }) => {
     <>
       <div
         id="card"
-        className="relative h-[500px] max-w-[392px] overflow-hidden rounded-[20px] border-2  border-[#92278f5e] bg-primaryColor"
+        className="relative h-[380px] max-w-[392px] overflow-hidden rounded-[20px] border-2 border-[#92278f5e] bg-primaryColor  md:h-[500px]"
       >
         <img
           src={placeimg ? placeimg : img}
           alt={placeimg}
-          className="h-[273px] w-full bg-cover"
+          className="h-[200px] w-full bg-cover md:h-[273px]"
         />
         <div className="absolute right-3 top-3 flex items-center gap-x-2 rounded-[10px] bg-[#22222241] px-5 py-2 shadow-inner backdrop-blur-md">
           <span className=" text-lg text-[#FFCD6B]">
@@ -24,10 +24,10 @@ const Card = ({ title, placeimg, des, star }) => {
           </p>
         </div>
         <div className="px-7 py-7">
-          <h3 className="pb-3 font-workSans text-[28px] font-normal text-primaryFontColor">
+          <h3 className="pb-3 font-workSans text-[20px] font-normal text-primaryFontColor md:text-[28px]">
             {title ? title : "Mumbai"}
           </h3>
-          <p className="whitespace-wrap h-[52px] w-[290px] overflow-hidden text-ellipsis font-poppins text-base font-normal text-primaryFontColor opacity-[60%]">
+          <p className="overflow-hidden text-ellipsis whitespace-nowrap font-poppins text-sm font-normal text-primaryFontColor opacity-[60%] md:text-base">
             {des
               ? des
               : "Lorem Ipsum is simply dummy text of the printing and...see more"}

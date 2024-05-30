@@ -9,17 +9,17 @@ import { Fade } from "react-awesome-reveal";
 const Gallery = () => {
   return (
     <>
-      <div id="gallery" className="py-[60px]">
+      <div id="gallery" className="px-4 py-[60px] lg:px-0">
         <div className="container">
           <div>
             <Fade direction="up" triggerOnce="true">
-              <h2 className="pb-8 text-center font-workSans text-[44px] font-light uppercase text-primaryFontColor">
+              <h2 className="pb-8 text-center font-workSans text-[28px] font-light uppercase text-primaryFontColor md:text-[44px]">
                 Photo Gallery
               </h2>
             </Fade>
 
-            <div className="flex h-[564px] items-center justify-between overflow-hidden rounded-[10px]">
-              <div className="flex h-full w-[70%] flex-wrap justify-between gap-y-[31px] overflow-hidden rounded-[10px]">
+            <div className="flex h-[564px] flex-col items-center justify-between gap-y-4 overflow-hidden rounded-[10px] md:flex-row md:gap-y-0">
+              <div className="flex h-full w-[100%] flex-wrap justify-between gap-y-4 overflow-hidden rounded-[10px] md:w-[70%] md:gap-y-[31px]">
                 <Fade
                   direction="left"
                   triggerOnce="true"
@@ -69,7 +69,7 @@ const Gallery = () => {
               <Fade
                 direction="right"
                 triggerOnce="true"
-                className=" h-full w-[27%]  overflow-hidden rounded-[10px] bg-[#ffffffc9]"
+                className=" h-full w-[100%] overflow-hidden  rounded-[10px] bg-[#ffffffc9] md:w-[27%]"
               >
                 <img
                   src={img5}

@@ -7,12 +7,12 @@ import { Fade } from "react-awesome-reveal";
 const Download = () => {
   return (
     <>
-      <div className="overflow-hidden py-[60px]">
+      <div className="overflow-hidden px-4 py-[60px] lg:px-0">
         <div className="container">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between">
             <Fade direction="left" triggerOnce="true">
               <div className="max-w-[640px]">
-                <h3 className="pb-8 font-workSans text-[44px] font-light uppercase text-primaryFontColor">
+                <h3 className="pb-8 font-workSans text-[28px] font-light uppercase text-primaryFontColor md:text-[44px]">
                   Download Cordelia Experience App
                 </h3>
 

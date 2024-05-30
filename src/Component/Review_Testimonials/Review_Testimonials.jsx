@@ -98,21 +98,25 @@ const Review_Testimonials = () => {
 
   return (
     <>
-      <Fade direction="up" triggerOnce="true" className="py-[60px]">
+      <Fade
+        direction="up"
+        triggerOnce="true"
+        className="px-4 py-[60px] lg:px-0"
+      >
         <div className="container">
           <div>
             {/* heading */}
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between">
               <div>
-                <p className="pb-4 font-poppins text-lg font-semibold uppercase text-thirdColor">
+                <p className="text-md pb-4 font-poppins font-semibold uppercase text-thirdColor md:text-lg">
                   Review & Testimonials
                 </p>
-                <h2 className="font-workSans text-[44px] font-light uppercase text-thirdFontColor">
+                <h2 className="pb-3 font-workSans text-[28px] font-light uppercase text-thirdFontColor md:pb-0 md:text-[44px]">
                   top reviews for etour
                 </h2>
               </div>
               <div>
-                <p className="max-w-[612px] font-poppins text-base font-normal text-extraFontColor">
+                <p className="max-w-[612px] font-poppins text-sm font-normal text-extraFontColor md:text-base">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s,
@@ -120,10 +124,10 @@ const Review_Testimonials = () => {
               </div>
             </div>
             {/* Reviews */}
-            <div className="mt-8 flex h-[450px] items-center justify-between">
+            <div className="mt-8 flex h-[450px] flex-wrap items-center justify-between">
               <div
                 id="reviewCard"
-                className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg"
+                className="h-full w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg md:w-[604px]"
               >
                 <div>
                   <img src={quotesImg1} alt={quotesImg1} />
@@ -139,7 +143,7 @@ const Review_Testimonials = () => {
                   >
                     {reviewData?.map((data) => (
                       <SwiperSlide key={data.id}>
-                        <p className="py-[50px] font-poppins text-base font-normal text-primaryFontColor">
+                        <p className="py-[20px] font-poppins text-sm font-normal text-primaryFontColor md:py-[50px] md:text-base">
                           {data.description}
                         </p>
                       </SwiperSlide>
@@ -149,7 +153,7 @@ const Review_Testimonials = () => {
                 <div className="flex justify-end">
                   <img src={quotesImg2} alt={quotesImg2} />
                 </div>
-                <div className="mt-[50px] flex items-center justify-between">
+                <div className="mt-[30px] flex flex-wrap items-center justify-center md:mt-[50px] md:flex-nowrap md:justify-between">
                   <Swiper
                     slidesPerView={1}
                     effect={"creative"}
@@ -178,7 +182,7 @@ const Review_Testimonials = () => {
                         className="flex items-center gap-x-3"
                         key={data.id}
                       >
-                        <div className="h-[80px] w-[80px] overflow-hidden rounded-full">
+                        <div className="h-[60px] w-[60px] overflow-hidden rounded-full md:h-[80px] md:w-[80px]">
                           <img
                             src={data.image}
                             alt={data.image}
@@ -186,21 +190,21 @@ const Review_Testimonials = () => {
                           />
                         </div>
                         <div>
-                          <h2 className="whitespace-nowrap font-poppins text-2xl font-semibold text-extraFontColor opacity-[75%]">
+                          <h2 className="whitespace-nowrap font-poppins text-xl font-semibold text-extraFontColor opacity-[75%] md:text-2xl">
                             {data.name}
                           </h2>
-                          <p className="font-poppins text-base font-semibold text-extraFontColor opacity-[75%]">
+                          <p className="font-poppins text-sm font-semibold text-extraFontColor opacity-[75%] md:text-base">
                             {data.location}
                           </p>
                         </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                  <div className="flex items-center gap-x-9">
-                    <div className="prev-arrow z-40 flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-2xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78]">
+                  <div className="flex items-center gap-x-3 pt-5 md:gap-x-9 md:pt-0">
+                    <div className="prev-arrow z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78] md:h-[50px] md:w-[50px] md:text-2xl">
                       <FaAngleLeft />
                     </div>
-                    <div className="next-arrow z-40 flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-2xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78]">
+                    <div className="next-arrow z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78] md:h-[50px] md:w-[50px] md:text-2xl">
                       <FaAngleRight />
                     </div>
                   </div>
@@ -208,7 +212,7 @@ const Review_Testimonials = () => {
               </div>
               <div
                 id="reviewCard"
-                className="h-full w-[604px] rounded-[20px] bg-primaryColor p-5 shadow-lg"
+                className=" mt-6 h-full w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg md:w-[604px]"
               >
                 <Slider
                   {...settings}

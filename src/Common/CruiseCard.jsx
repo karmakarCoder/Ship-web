@@ -5,7 +5,7 @@ const CruiseCard = ({ title, detail, rating, price, img, date, departure }) => {
   return (
     <div
       id="cruiseCard"
-      className="h-[500px] w-[392px] overflow-hidden rounded-[20px]"
+      className="h-[403px] w-[324px] overflow-hidden rounded-[20px] md:h-[500px] md:w-[392px]"
     >
       <div>
         <img
@@ -14,7 +14,7 @@ const CruiseCard = ({ title, detail, rating, price, img, date, departure }) => {
               ? img
               : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPWbE5Qm8mN80pP-e_EkpAyb8nrMLmggfaXns-kXidRQ&s"
           }
-          className="h-[273px] w-full object-cover"
+          className="h-[214px]  w-full object-cover md:h-[273px]"
           alt=""
         />
       </div>
@@ -22,10 +22,10 @@ const CruiseCard = ({ title, detail, rating, price, img, date, departure }) => {
         <div className="flex items-start justify-between pb-[10px]">
           {/* title */}
           <div>
-            <h3 className="w-[300px] overflow-hidden text-ellipsis text-nowrap font-workSans text-2xl font-normal leading-none text-secondaryFontColor">
+            <h3 className=" w-[195px] overflow-hidden text-ellipsis text-nowrap font-workSans text-xl font-normal leading-none text-secondaryFontColor md:w-[300px] md:text-2xl">
               {title ? title : "Cruise Ship"}
             </h3>
-            <p className="font-poppins text-sm font-normal text-secondaryFontColor">
+            <p className="font-poppins text-xs font-normal text-secondaryFontColor md:text-sm">
               {detail ? detail : "3 Days 4 Nights"}
             </p>
           </div>
@@ -41,19 +41,19 @@ const CruiseCard = ({ title, detail, rating, price, img, date, departure }) => {
         {/* Date */}
         <div className="flex items-center justify-between pb-5">
           <div>
-            <h4 className="font-poppins text-sm font-normal text-secondaryFontColor">
+            <h4 className="font-poppins text-xs font-normal text-secondaryFontColor md:text-sm">
               Date
             </h4>
-            <p className="font-poppins text-base font-normal text-secondaryFontColor">
+            <p className="font-poppins text-sm font-normal text-secondaryFontColor md:text-base">
               {date ? date : "M/DD/YYYY"}
             </p>
           </div>
           {/* Departure */}
           <div>
-            <h4 className="font-poppins text-sm font-normal text-secondaryFontColor">
+            <h4 className="font-poppins text-xs font-normal text-secondaryFontColor md:text-sm">
               Departure
             </h4>
-            <p className="font-poppins text-base font-normal text-secondaryFontColor">
+            <p className="font-poppins text-sm font-normal text-secondaryFontColor md:text-base">
               {departure ? departure : "Place"}
             </p>
           </div>
@@ -61,13 +61,13 @@ const CruiseCard = ({ title, detail, rating, price, img, date, departure }) => {
         {/* -----------line--------- */}
         <div className="h-[1px] w-full bg-[#FEF0EF]"></div>
         {/* price */}
-        <div className="flex items-center justify-between py-5">
-          <p className="font-workSans text-xl font-medium text-primaryFontColor">
+        <div className="flex items-center justify-between py-3 md:py-5">
+          <p className="font-workSans text-lg font-medium text-primaryFontColor md:text-xl">
             {price ? price : "$00"}
           </p>
           <a
             href="#"
-            className="relative font-poppins text-sm font-semibold text-additionalColor after:absolute after:bottom-0 after:left-0 after:h-[1.5px] after:w-full after:origin-left after:scale-x-0 after:bg-additionalColor after:transition-transform hover:after:origin-right hover:after:scale-x-100"
+            className="relative font-poppins text-xs font-semibold text-additionalColor after:absolute after:bottom-0 after:left-0 after:h-[1.5px] after:w-full after:origin-left after:scale-x-0 after:bg-additionalColor after:transition-transform hover:after:origin-right hover:after:scale-x-100 md:text-sm"
           >
             Book Now
           </a>
