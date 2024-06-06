@@ -13,11 +13,15 @@ const Nav = () => {
     <>
       <div className="nav flex items-center justify-between overflow-hidden  py-7">
         <Fade direction="up" triggerOnce="true">
-          <img src={logo} alt={logo} className="w-[132px] sm:w-[194px]" />
+          <img
+            src={logo}
+            alt={logo}
+            className="w-[132px] sm:w-[120px] md:w-[194px]"
+          />
         </Fade>
         <Fade direction="down" triggerOnce="true">
           <div className="hidden sm:block">
-            <ul className="flex items-center gap-x-8 font-workSans text-base font-normal text-primaryColor">
+            <ul className="flex items-center gap-x-8 font-workSans text-base font-normal text-primaryColor sm:gap-x-4 sm:text-xs md:gap-x-8 md:text-base">
               <li>
                 <a href="#UpcomingCruise">Offers</a>
               </li>
@@ -85,7 +89,7 @@ const Nav = () => {
         )}
 
         <Fade direction="up" triggerOnce="true">
-          <button className="hidden rounded-xl bg-thirdColor px-8 py-4 font-poppins text-sm font-semibold text-primaryColor transition-all hover:bg-[#7e2579] sm:block">
+          <button className="hidden whitespace-nowrap rounded-xl bg-thirdColor px-8 py-4 font-poppins text-sm font-semibold text-primaryColor transition-all hover:bg-[#7e2579] sm:block sm:px-2 sm:py-3 sm:text-[10px] md:py-4 md:text-base">
             Weekend Gateway
           </button>
         </Fade>

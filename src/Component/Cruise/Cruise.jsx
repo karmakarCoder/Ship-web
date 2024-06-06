@@ -9,7 +9,10 @@ import { Fade } from "react-awesome-reveal";
 const Cruise = () => {
   return (
     <>
-      <div id="UpcomingCruise" className="overflow-hidden px-4 py-14 lg:px-0">
+      <div
+        id="UpcomingCruise"
+        className="overflow-hidden px-4 py-7 md:py-14 lg:px-0"
+      >
         <div className="container">
           <Fade
             direction="down"
@@ -20,27 +23,27 @@ const Cruise = () => {
               Upcoming Cruise
             </h2>
           </Fade>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-3 py-8 md:flex-nowrap md:gap-y-0">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-3 py-8 sm:flex-nowrap md:flex-nowrap md:gap-y-0">
             <Fade direction="left" triggerOnce="true">
-              <p className="text-md font-poppins font-medium text-secondaryFontColor md:text-xl">
+              <p className="font-poppins text-sm font-medium text-secondaryFontColor md:text-xl">
                 Short by:
               </p>
             </Fade>
             <Fade direction="right" triggerOnce="true">
-              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] bg-additionalColor px-3 py-[10px] font-poppins text-sm font-normal text-primaryColor  md:px-5 md:py-[12px]  md:text-base">
-                <BsCalendarDate className="text-md md:text-xl" />
+              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] bg-additionalColor px-3 py-[10px] font-poppins text-xs font-normal text-primaryColor  md:px-5 md:py-[12px]  md:text-base">
+                <BsCalendarDate className="text-sm md:text-xl" />
                 <span className="leading-none">Date</span>
               </div>
-              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] border-2 border-[#92278f57] bg-additionalBgColor px-3 py-[10px] font-poppins text-sm font-normal text-addiTionalFontColor  md:px-5 md:py-[12px] md:text-base">
-                <BsUpload className="text-md md:text-xl" />
+              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] border-2 border-[#92278f57] bg-additionalBgColor px-3 py-[10px] font-poppins text-xs font-normal text-addiTionalFontColor  md:px-5 md:py-[12px] md:text-base">
+                <BsUpload className="text-sm md:text-xl" />
                 <span className="leading-none">price low to High</span>
               </div>
-              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] border-2 border-[#92278f57] bg-additionalBgColor px-4 py-[10px] font-poppins text-sm font-normal text-addiTionalFontColor  md:px-5 md:py-[12px] md:text-base">
-                <BsDownload className="text-md md:text-xl" />
+              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] border-2 border-[#92278f57] bg-additionalBgColor px-4 py-[10px] font-poppins text-xs font-normal text-addiTionalFontColor  md:px-5 md:py-[12px] md:text-base">
+                <BsDownload className="text-sm md:text-xl" />
                 <span className="leading-none">Price High to low</span>
               </div>
-              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] border-2 border-[#92278f57] bg-additionalBgColor px-4 py-[10px] font-poppins text-sm font-normal text-addiTionalFontColor  md:px-5 md:py-[12px] md:text-base">
-                <LuPencilLine className="text-md md:text-xl" />
+              <div className="flex cursor-pointer items-center gap-x-[10px] rounded-[10px] border-2 border-[#92278f57] bg-additionalBgColor px-4 py-[10px] font-poppins text-xs font-normal text-addiTionalFontColor  md:px-5 md:py-[12px] md:text-base">
+                <LuPencilLine className="text-sm md:text-xl" />
                 <span className="leading-none">Name (A-z)</span>
               </div>
             </Fade>

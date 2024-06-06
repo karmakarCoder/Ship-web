@@ -6,18 +6,25 @@ import { Fade } from "react-awesome-reveal";
 const Email = () => {
   return (
     <>
-      <div id="email" className="overflow-hidden bg-emailBgColor py-[60px]">
+      <div
+        id="email"
+        className="overflow-hidden bg-emailBgColor px-4 py-[20px] md:py-[60px] lg:px-0"
+      >
         <div className="container">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between sm:flex-row sm:gap-x-4 md:gap-x-0">
             <Fade direction="left" triggerOnce="true">
-              <img src={cruise} alt={cruise} />
+              <img
+                src={cruise}
+                alt={cruise}
+                className="w-[250px] sm:w-[520px] md:w-[600px]"
+              />
             </Fade>
             <div className="max-w-[603px]">
               <Fade direction="up" triggerOnce="true" duration={"1000"}>
-                <h4 className="pb-4 font-workSans text-[40px] font-light uppercase text-primaryFontColor">
+                <h4 className="pb-4 pt-5 font-workSans text-[26px] font-light uppercase text-primaryFontColor md:pt-0 md:text-[40px]">
                   Get Cruise deals Directly in your Inbox
                 </h4>
-                <p className="pb-10 font-poppins text-base font-normal text-extraFontColor opacity-[75%]">
+                <p className="pb-4 font-poppins text-sm font-normal text-extraFontColor opacity-[75%] md:pb-10 md:text-base">
                   Lorem ipsum dolor sit amet consectetur. Egestas et feugiat
                   purus enim facilisi nunc blandit nullam.
                 </p>

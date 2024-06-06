@@ -56,8 +56,8 @@ const Destination = () => {
               </h2>
             </Fade>
           </div>
-          <div className="flex flex-wrap items-end justify-end gap-y-6 pb-8  md:items-center md:justify-between md:gap-y-0">
-            <div className="flex items-center overflow-hidden rounded-[20px] border-[7px] border-[#fef0ef]">
+          <div className="flex flex-wrap items-end justify-end  gap-y-6 pb-8 sm:flex-nowrap  sm:items-center sm:justify-between md:gap-y-0">
+            <div className="flex items-center overflow-hidden rounded-[20px] border-[7px] border-[#fef0ef] sm:w-[420px] md:w-[615px]">
               <div
                 className={`w-[180px] cursor-pointer bg-primaryColor py-3 text-center md:w-[200px]  ${india ? "bg-thirdColor text-primaryColor" : "text-thirdColor"}`}
                 onClick={HandleIndia}
@@ -113,12 +113,12 @@ const Destination = () => {
                   slidesPerView: 1,
                   spaceBetween: 20,
                 },
-                768: {
-                  slidesPerView: 4,
+                734: {
+                  slidesPerView: 2,
                   spaceBetween: 40,
                 },
                 1024: {
-                  slidesPerView: 5,
+                  slidesPerView: 3,
                   spaceBetween: 50,
                 },
               }}

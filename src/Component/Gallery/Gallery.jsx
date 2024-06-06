@@ -18,8 +18,8 @@ const Gallery = () => {
               </h2>
             </Fade>
 
-            <div className="flex h-[564px] flex-col items-center justify-between gap-y-4 overflow-hidden rounded-[10px] md:flex-row md:gap-y-0">
-              <div className="flex h-full w-[100%] flex-wrap justify-between gap-y-4 overflow-hidden rounded-[10px] md:w-[70%] md:gap-y-[31px]">
+            <div className="flex h-[564px] flex-col items-center justify-between gap-y-4 overflow-hidden rounded-[10px] sm:flex-row md:gap-y-0">
+              <div className="flex h-full w-[100%] flex-wrap justify-between gap-y-4 overflow-hidden rounded-[10px] sm:w-[60%] md:w-[70%] md:gap-y-[31px]">
                 <Fade
                   direction="left"
                   triggerOnce="true"
@@ -69,7 +69,7 @@ const Gallery = () => {
               <Fade
                 direction="right"
                 triggerOnce="true"
-                className=" h-full w-[100%] overflow-hidden  rounded-[10px] bg-[#ffffffc9] md:w-[27%]"
+                className=" h-full w-[100%] overflow-hidden  rounded-[10px] bg-[#ffffffc9] sm:w-[35%] md:w-[27%]"
               >
                 <img
                   src={img5}

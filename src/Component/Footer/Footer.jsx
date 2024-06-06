@@ -19,13 +19,17 @@ import {
 const Footer = () => {
   return (
     <>
-      <div id="footer" className="overflow-hidden">
+      <div id="footer" className="overflow-hidden px-4 lg:px-0">
         <div className="container">
-          <div className="flex items-center justify-between py-[100px]">
+          <div className="flex flex-col flex-wrap items-start justify-between py-[50px] sm:flex-row sm:items-center md:flex-nowrap md:py-[100px]">
             <Fade direction="left" triggerOnce="true">
               <div>
-                <img src="/src/assets/footerlogo.png" alt="" />
-                <p className="max-w-[285px] py-6 font-poppins text-base font-normal leading-7 text-primaryFontColor">
+                <img
+                  src="/src/assets/footerlogo.png"
+                  alt=""
+                  className="w-[150px] md:w-[194px]"
+                />
+                <p className="max-w-[285px] py-4 font-poppins text-sm font-normal leading-7 text-primaryFontColor md:py-6 md:text-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
                 </p>
                 <div className="flex items-center gap-x-5 ">
@@ -63,9 +67,9 @@ const Footer = () => {
               </div>
             </Fade>
             <Fade direction="up" triggerOnce="true">
-              <div className="flex items-center gap-x-20">
+              <div className="flex items-center  justify-between gap-x-8 pt-10 md:gap-x-20">
                 <div>
-                  <li className="pb-9 font-workSans text-2xl font-normal text-primaryFontColor">
+                  <li className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:pb-9 md:text-2xl">
                     Product
                   </li>
                   {footerProduct?.map((item, index) => (
@@ -73,7 +77,7 @@ const Footer = () => {
                       <li key={index} className="mb-4">
                         <a
                           href="#"
-                          className="font-poppins text-base font-normal text-primaryFontColor hover:underline"
+                          className="font-poppins text-xs font-normal text-primaryFontColor hover:underline md:text-base"
                         >
                           {item}
                         </a>
@@ -82,7 +86,7 @@ const Footer = () => {
                   ))}
                 </div>
                 <div>
-                  <li className="pb-9 font-workSans text-2xl font-normal text-primaryFontColor">
+                  <li className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:pb-9 md:text-2xl">
                     Company
                   </li>
                   {footerCompany?.map((item) => (
@@ -90,7 +94,7 @@ const Footer = () => {
                       <li key={item} className="mb-4">
                         <a
                           href="#"
-                          className="font-poppins text-base font-normal text-primaryFontColor hover:underline"
+                          className="font-poppins text-xs font-normal text-primaryFontColor hover:underline md:text-base"
                         >
                           {item}
                         </a>
@@ -99,7 +103,7 @@ const Footer = () => {
                   ))}
                 </div>
                 <div>
-                  <li className="pb-9 font-workSans text-2xl font-normal text-primaryFontColor">
+                  <li className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:pb-9 md:text-2xl">
                     Support
                   </li>
                   {footerSupport?.map((item) => (
@@ -107,7 +111,7 @@ const Footer = () => {
                       <li key={item} className="mb-4">
                         <a
                           href="#"
-                          className="font-poppins text-base font-normal text-primaryFontColor hover:underline"
+                          className="font-poppins text-xs font-normal text-primaryFontColor hover:underline md:text-base"
                         >
                           {item}
                         </a>
@@ -120,24 +124,24 @@ const Footer = () => {
 
             <Fade direction="right" triggerOnce="true">
               <div>
-                <h4 className="pb-9 font-workSans text-2xl font-normal text-primaryFontColor">
+                <h4 className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:pb-9 md:text-2xl">
                   Contacts us
                 </h4>
-                <div className="mb-9 flex items-center gap-x-1">
-                  <HiOutlineMail className="text-xl text-additionalColor" />
-                  <p className="font-poppins text-base font-normal text-primaryFontColor">
+                <div className="mb-4 flex items-center gap-x-1 md:mb-9">
+                  <HiOutlineMail className="text-base text-additionalColor md:text-2xl" />
+                  <p className="font-poppins text-xs font-normal text-primaryFontColor md:text-base">
                     contact@company.com
                   </p>
                 </div>
-                <div className="mb-9 flex items-center gap-x-1">
-                  <IoCallOutline className="text-xl text-additionalColor" />
-                  <p className="font-poppins text-base font-normal text-primaryFontColor">
+                <div className="mb-4 flex items-center gap-x-1 md:mb-9">
+                  <IoCallOutline className="text-base text-additionalColor md:text-2xl" />
+                  <p className="font-poppins text-xs font-normal text-primaryFontColor md:text-base">
                     (xx) xxxx-xxxx
                   </p>
                 </div>
                 <div className="flex items-center gap-x-1">
-                  <TiLocationOutline className="text-2xl text-additionalColor" />
-                  <p className="font-poppins text-base font-normal text-primaryFontColor">
+                  <TiLocationOutline className="text-lg text-additionalColor md:text-2xl" />
+                  <p className="font-poppins text-xs font-normal text-primaryFontColor md:text-base">
                     794 Mcallister St San Francisco, 94102
                   </p>
                 </div>
@@ -146,21 +150,26 @@ const Footer = () => {
           </div>
           {/* =========== */}
           <Fade triggerOnce="true">
-            <div className="flex items-center justify-between border-t-2 py-[10px]">
+            <div
+              className="flex flex-col items-center justify-between
+             border-t-2 py-[10px] sm:flex-row md:flex-row"
+            >
               <div>
-                <p className="font-poppins text-base font-normal text-primaryFontColor">
+                <p className="font-poppins text-xs font-normal text-primaryFontColor md:text-base">
                   Copyright © 2023{" "}
                 </p>
               </div>
-              <div className="font-poppins text-base font-normal text-primaryFontColor">
+              <div className="flex flex-col items-center font-poppins text-xs font-normal text-primaryFontColor sm:flex-row md:flex-row md:text-base">
                 All Rights Reserved |{" "}
-                <a href="/" className="text-additionalColor underline">
-                  Terms and Conditions
-                </a>{" "}
-                |{" "}
-                <a href="/" className="text-additionalColor underline">
-                  Privacy Policy
-                </a>
+                <div>
+                  <a href="/" className="text-additionalColor underline">
+                    Terms and Conditions
+                  </a>{" "}
+                  |{" "}
+                  <a href="/" className="text-additionalColor underline">
+                    Privacy Policy
+                  </a>
+                </div>
               </div>
             </div>
           </Fade>

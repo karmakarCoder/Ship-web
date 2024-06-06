@@ -126,8 +126,18 @@
     -moz-box-shadow: 0px 4px 34px 0px rgba(250, 134, 182, 0.253);
   }
 
+  .slide1 {
+    height: 200px !important;
+  }
+
   .slide2 .slick-track {
     margin-left: 26px;
     margin-top: 20px;
+  }
+
+  @media (min-width: 730px) {
+    .slide1 {
+      height: 270px !important;
+    }
   }
 }

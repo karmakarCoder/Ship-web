@@ -96,17 +96,45 @@ const Review_Testimonials = () => {
     arrows: false,
   };
 
+  var setting2 = {
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Fade
         direction="up"
         triggerOnce="true"
-        className="px-4 py-[60px] lg:px-0"
+        className="px-4 py-[20px] md:py-[60px] lg:px-0"
       >
         <div className="container">
           <div>
             {/* heading */}
-            <div className="flex flex-wrap items-center justify-between">
+            <div className="flex flex-wrap  items-center justify-between">
               <div>
                 <p className="text-md pb-4 font-poppins font-semibold uppercase text-thirdColor md:text-lg">
                   Review & Testimonials
@@ -124,10 +152,13 @@ const Review_Testimonials = () => {
               </div>
             </div>
             {/* Reviews */}
-            <div className="mt-8 flex h-[450px] flex-wrap items-center justify-between">
+            <div
+              className="mt-8 flex flex-wrap items-center
+             justify-between sm:flex-nowrap sm:gap-x-3 md:gap-x-0"
+            >
               <div
                 id="reviewCard"
-                className="h-full w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg md:w-[604px]"
+                className=" h-[420px] w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg md:h-[450px] md:w-[604px]"
               >
                 <div>
                   <img src={quotesImg1} alt={quotesImg1} />
@@ -143,7 +174,7 @@ const Review_Testimonials = () => {
                   >
                     {reviewData?.map((data) => (
                       <SwiperSlide key={data.id}>
-                        <p className="py-[20px] font-poppins text-sm font-normal text-primaryFontColor md:py-[50px] md:text-base">
+                        <p className="py-[15px] font-poppins text-sm font-normal text-primaryFontColor md:py-[50px] md:text-base">
                           {data.description}
                         </p>
                       </SwiperSlide>
@@ -153,7 +184,7 @@ const Review_Testimonials = () => {
                 <div className="flex justify-end">
                   <img src={quotesImg2} alt={quotesImg2} />
                 </div>
-                <div className="mt-[30px] flex flex-wrap items-center justify-center md:mt-[50px] md:flex-nowrap md:justify-between">
+                <div className="mt-[20px] flex flex-wrap items-center justify-center md:mt-[50px] md:flex-nowrap md:justify-between">
                   <Swiper
                     slidesPerView={1}
                     effect={"creative"}
@@ -212,7 +243,7 @@ const Review_Testimonials = () => {
               </div>
               <div
                 id="reviewCard"
-                className=" mt-6 h-full w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg md:w-[604px]"
+                className=" mt-6 h-[350px] w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg sm:mt-0 sm:h-[420px] md:h-[450px] md:w-[604px]"
               >
                 <Slider
                   {...settings}
@@ -220,35 +251,35 @@ const Review_Testimonials = () => {
                   ref={(slider) => (sliderRef1 = slider)}
                   className="slide1"
                 >
-                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px] ">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[300px] w-full overflow-hidden rounded-[10px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
@@ -258,6 +289,7 @@ const Review_Testimonials = () => {
                 </Slider>
 
                 <Slider
+                  {...setting2}
                   asNavFor={nav1}
                   ref={(slider) => (sliderRef2 = slider)}
                   slidesToShow={4}

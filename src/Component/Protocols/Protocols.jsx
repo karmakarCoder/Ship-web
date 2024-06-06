@@ -9,41 +9,41 @@ const Protocols = () => {
     <>
       <div className="bg-protocolsBgColor">
         <div className="container">
-          <div className="overflow-hidden px-4 py-[60px] lg:px-0">
+          <div className="overflow-hidden px-4 py-[50px] sm:py-[40px] md:py-[60px] lg:px-0">
             <Fade direction="up" triggerOnce="true">
               <h1 className="pb-8 font-workSans text-[28px] font-light uppercase text-primaryFontColor md:text-[44px]">
                 Safety Protocols
               </h1>
             </Fade>
             <Fade direction="up" triggerOnce="true" duration={"1500"}>
-              <div className="flex flex-wrap items-center justify-between">
-                <div className="flex items-center gap-x-3">
+              <div className="flex flex-wrap items-center justify-between sm:flex-nowrap">
+                <div className="flex items-center gap-x-2 sm:gap-x-1 md:gap-x-3">
                   <img
                     src={protocols1Img}
                     alt={protocols1Img}
-                    className="w-[80px] md:w-[140px]"
+                    className="w-[60px] md:w-[140px]"
                   />
-                  <p className="w-[235px] font-poppins text-xl font-light text-protocolsFontColor md:text-2xl">
+                  <p className="text-md w-[235px] font-poppins font-light text-protocolsFontColor md:text-2xl">
                     100% Fresh and Filtered Air
                   </p>
                 </div>
-                <div className="flex items-center gap-x-3">
+                <div className="flex items-center gap-x-1">
                   <img
                     src={protocols2Img}
                     alt={protocols2Img}
-                    className="w-[80px] md:w-[140px]"
+                    className="w-[60px] md:w-[140px]"
                   />
-                  <p className="w-[235px] font-poppins text-xl font-light text-protocolsFontColor md:text-2xl">
+                  <p className="text-md w-[235px] font-poppins font-light text-protocolsFontColor sm:w-[200px] md:w-[235] md:text-2xl">
                     Completely Sanitized
                   </p>
                 </div>
-                <div className="flex items-center gap-x-3">
+                <div className="flex items-center gap-x-1">
                   <img
                     src={protocols3Img}
                     alt={protocols3Img}
-                    className="w-[80px] md:w-[140px]"
+                    className="w-[50px] md:w-[140px]"
                   />
-                  <p className="w-[235px] font-poppins text-xl font-light text-protocolsFontColor md:text-2xl">
+                  <p className="text-md w-[235px] font-poppins font-light text-protocolsFontColor md:text-2xl">
                     Elevated Health Protocols
                   </p>
                 </div>
