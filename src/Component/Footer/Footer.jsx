@@ -21,7 +21,7 @@ const Footer = () => {
     <>
       <div id="footer" className="overflow-hidden px-4 lg:px-0">
         <div className="container">
-          <div className="flex flex-col flex-wrap items-start justify-between py-[50px] sm:flex-row sm:items-center md:flex-nowrap md:py-[100px]">
+          <div className="flex flex-col flex-wrap items-start justify-between py-[50px] sm:flex-row lg:py-[100px] xl:flex-nowrap xl:items-center">
             <Fade direction="left" triggerOnce="true">
               <div>
                 <img
@@ -29,7 +29,7 @@ const Footer = () => {
                   alt=""
                   className="w-[150px] md:w-[194px]"
                 />
-                <p className="max-w-[285px] py-4 font-poppins text-sm font-normal leading-7 text-primaryFontColor md:py-6 md:text-base">
+                <p className="max-w-[285px] py-4 font-poppins text-sm font-normal leading-7 text-primaryFontColor md:text-base lg:py-6">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
                 </p>
                 <div className="flex items-center gap-x-5 ">
@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
             </Fade>
             <Fade direction="up" triggerOnce="true">
-              <div className="flex items-center  justify-between gap-x-8 pt-10 md:gap-x-20">
+              <div className="flex items-center justify-between gap-x-8 pt-10 md:gap-x-20 lg:items-start lg:pt-0 xl:items-center">
                 <div>
                   <li className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:pb-9 md:text-2xl">
                     Product
@@ -123,17 +123,17 @@ const Footer = () => {
             </Fade>
 
             <Fade direction="right" triggerOnce="true">
-              <div>
-                <h4 className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:pb-9 md:text-2xl">
+              <div className="md:pt-7 lg:pt-0">
+                <h4 className="pb-3 font-workSans text-lg font-normal text-primaryFontColor md:text-2xl lg:pb-9">
                   Contacts us
                 </h4>
-                <div className="mb-4 flex items-center gap-x-1 md:mb-9">
+                <div className="mb-4 flex items-center gap-x-1 lg:mb-9">
                   <HiOutlineMail className="text-base text-additionalColor md:text-2xl" />
                   <p className="font-poppins text-xs font-normal text-primaryFontColor md:text-base">
                     contact@company.com
                   </p>
                 </div>
-                <div className="mb-4 flex items-center gap-x-1 md:mb-9">
+                <div className="mb-4 flex items-center gap-x-1 lg:mb-9">
                   <IoCallOutline className="text-base text-additionalColor md:text-2xl" />
                   <p className="font-poppins text-xs font-normal text-primaryFontColor md:text-base">
                     (xx) xxxx-xxxx

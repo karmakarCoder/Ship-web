@@ -16,12 +16,12 @@ const Nav = () => {
           <img
             src={logo}
             alt={logo}
-            className="w-[132px] sm:w-[120px] md:w-[194px]"
+            className="w-[132px] sm:w-[120px] lg:w-[194px]"
           />
         </Fade>
         <Fade direction="down" triggerOnce="true">
           <div className="hidden sm:block">
-            <ul className="flex items-center gap-x-8 font-workSans text-base font-normal text-primaryColor sm:gap-x-4 sm:text-xs md:gap-x-8 md:text-base">
+            <ul className="flex items-center gap-x-8 font-workSans text-base font-normal text-primaryColor sm:gap-x-4 sm:text-xs lg:gap-x-8 lg:text-base">
               <li>
                 <a href="#UpcomingCruise">Offers</a>
               </li>
@@ -89,7 +89,7 @@ const Nav = () => {
         )}
 
         <Fade direction="up" triggerOnce="true">
-          <button className="hidden whitespace-nowrap rounded-xl bg-thirdColor px-8 py-4 font-poppins text-sm font-semibold text-primaryColor transition-all hover:bg-[#7e2579] sm:block sm:px-2 sm:py-3 sm:text-[10px] md:py-4 md:text-base">
+          <button className="hidden whitespace-nowrap rounded-xl bg-thirdColor px-8 py-3 font-poppins text-sm font-semibold text-primaryColor transition-all hover:bg-[#7e2579] sm:block sm:px-4 sm:py-2 sm:text-[10px] lg:py-4 lg:text-base">
             Weekend Gateway
           </button>
         </Fade>

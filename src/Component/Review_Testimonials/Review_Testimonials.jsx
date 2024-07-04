@@ -158,7 +158,7 @@ const Review_Testimonials = () => {
             >
               <div
                 id="reviewCard"
-                className=" h-[420px] w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg md:h-[450px] md:w-[604px]"
+                className=" h-[420px] w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg lg:h-[450px] lg:w-[500px] xl:w-[604px]"
               >
                 <div>
                   <img src={quotesImg1} alt={quotesImg1} />
@@ -174,7 +174,7 @@ const Review_Testimonials = () => {
                   >
                     {reviewData?.map((data) => (
                       <SwiperSlide key={data.id}>
-                        <p className="py-[15px] font-poppins text-sm font-normal text-primaryFontColor md:py-[50px] md:text-base">
+                        <p className="py-[15px] font-poppins text-sm font-normal text-primaryFontColor lg:text-base xl:py-[50px]">
                           {data.description}
                         </p>
                       </SwiperSlide>
@@ -184,7 +184,7 @@ const Review_Testimonials = () => {
                 <div className="flex justify-end">
                   <img src={quotesImg2} alt={quotesImg2} />
                 </div>
-                <div className="mt-[20px] flex flex-wrap items-center justify-center md:mt-[50px] md:flex-nowrap md:justify-between">
+                <div className="mt-[20px] flex flex-wrap items-center justify-center lg:mt-[50px] lg:flex-nowrap lg:justify-between">
                   <Swiper
                     slidesPerView={1}
                     effect={"creative"}
@@ -213,7 +213,7 @@ const Review_Testimonials = () => {
                         className="flex items-center gap-x-3"
                         key={data.id}
                       >
-                        <div className="h-[60px] w-[60px] overflow-hidden rounded-full md:h-[80px] md:w-[80px]">
+                        <div className="h-[60px] w-[60px] overflow-hidden rounded-full lg:h-[80px] lg:w-[80px]">
                           <img
                             src={data.image}
                             alt={data.image}
@@ -221,7 +221,7 @@ const Review_Testimonials = () => {
                           />
                         </div>
                         <div>
-                          <h2 className="whitespace-nowrap font-poppins text-xl font-semibold text-extraFontColor opacity-[75%] md:text-2xl">
+                          <h2 className="whitespace-nowrap font-poppins text-xl font-semibold text-extraFontColor opacity-[75%] lg:text-2xl">
                             {data.name}
                           </h2>
                           <p className="font-poppins text-sm font-semibold text-extraFontColor opacity-[75%] md:text-base">
@@ -231,11 +231,11 @@ const Review_Testimonials = () => {
                       </SwiperSlide>
                     ))}
                   </Swiper>
-                  <div className="flex items-center gap-x-3 pt-5 md:gap-x-9 md:pt-0">
-                    <div className="prev-arrow z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78] md:h-[50px] md:w-[50px] md:text-2xl">
+                  <div className="flex items-center gap-x-3 pt-5 lg:gap-x-9 lg:pt-0">
+                    <div className="prev-arrow z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78] lg:h-[50px] lg:w-[50px] lg:text-2xl">
                       <FaAngleLeft />
                     </div>
-                    <div className="next-arrow z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78] md:h-[50px] md:w-[50px] md:text-2xl">
+                    <div className="next-arrow z-40 flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full bg-[#F6F5F5] text-xl text-thirdColor shadow hover:bg-thirdColor hover:text-primaryColor active:bg-[#7c2a78] lg:h-[50px] lg:w-[50px] lg:text-2xl">
                       <FaAngleRight />
                     </div>
                   </div>
@@ -243,7 +243,7 @@ const Review_Testimonials = () => {
               </div>
               <div
                 id="reviewCard"
-                className=" mt-6 h-[350px] w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg sm:mt-0 sm:h-[420px] md:h-[450px] md:w-[604px]"
+                className=" mt-6 h-[350px] w-[324px] rounded-[20px] bg-primaryColor p-5 shadow-lg sm:mt-0 sm:h-[420px] lg:h-[450px] lg:w-[500px] xl:w-[604px]"
               >
                 <Slider
                   {...settings}
@@ -251,35 +251,35 @@ const Review_Testimonials = () => {
                   ref={(slider) => (sliderRef1 = slider)}
                   className="slide1"
                 >
-                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px] ">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] lg:h-[300px] ">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] lg:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] lg:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] lg:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""
                       className="h-full w-full  object-cover"
                     />
                   </div>
-                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] md:h-[300px]">
+                  <div className="h-[200px] w-full overflow-hidden rounded-[10px] sm:h-[270px] lg:h-[300px]">
                     <img
                       src={dummyVideoImg}
                       alt=""

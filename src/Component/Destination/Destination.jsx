@@ -113,6 +113,11 @@ const Destination = () => {
                   slidesPerView: 1,
                   spaceBetween: 20,
                 },
+
+                420: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
                 734: {
                   slidesPerView: 2,
                   spaceBetween: 40,
@@ -145,6 +150,29 @@ const Destination = () => {
                 prevEl: ".prev-arrow",
                 nextEl: ".next-arrow",
               }}
+              breakpoints={{
+                250: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                375: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+
+                420: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                734: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
             >
               {dubaidata?.map((data) => (
                 <SwiperSlide key={data.id}>
@@ -167,6 +195,29 @@ const Destination = () => {
               navigation={{
                 prevEl: ".prev-arrow",
                 nextEl: ".next-arrow",
+              }}
+              breakpoints={{
+                250: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                375: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+
+                420: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                734: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
               }}
             >
               {srilankadata?.map((data) => (

@@ -5,7 +5,7 @@ const CruiseCard = ({ title, detail, rating, price, img, date, departure }) => {
   return (
     <div
       id="cruiseCard"
-      className="h-[403px] w-[324px] overflow-hidden rounded-[20px] sm:w-[300px] md:h-[500px] md:w-[392px]"
+      className="h-[403px] w-[324px] overflow-hidden rounded-[20px] sm:w-[300px] md:h-[500px] md:w-[340px] lg:w-[392px]"
     >
       <div>
         <img

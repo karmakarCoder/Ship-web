@@ -9,9 +9,9 @@ const Protocols = () => {
     <>
       <div className="bg-protocolsBgColor">
         <div className="container">
-          <div className="overflow-hidden px-4 py-[50px] sm:py-[40px] md:py-[60px] lg:px-0">
+          <div className="overflow-hidden px-4 py-[50px] sm:py-[40px] lg:px-0 lg:py-[60px]">
             <Fade direction="up" triggerOnce="true">
-              <h1 className="pb-8 font-workSans text-[28px] font-light uppercase text-primaryFontColor md:text-[44px]">
+              <h1 className="pb-8 font-workSans text-[28px] font-light uppercase text-primaryFontColor lg:text-[44px]">
                 Safety Protocols
               </h1>
             </Fade>
@@ -21,7 +21,7 @@ const Protocols = () => {
                   <img
                     src={protocols1Img}
                     alt={protocols1Img}
-                    className="w-[60px] md:w-[140px]"
+                    className="w-[60px] lg:w-[140px]"
                   />
                   <p className="text-md w-[235px] font-poppins font-light text-protocolsFontColor md:text-2xl">
                     100% Fresh and Filtered Air
@@ -31,7 +31,7 @@ const Protocols = () => {
                   <img
                     src={protocols2Img}
                     alt={protocols2Img}
-                    className="w-[60px] md:w-[140px]"
+                    className="w-[60px] lg:w-[140px]"
                   />
                   <p className="text-md w-[235px] font-poppins font-light text-protocolsFontColor sm:w-[200px] md:w-[235] md:text-2xl">
                     Completely Sanitized
@@ -41,7 +41,7 @@ const Protocols = () => {
                   <img
                     src={protocols3Img}
                     alt={protocols3Img}
-                    className="w-[50px] md:w-[140px]"
+                    className="w-[50px] lg:w-[140px]"
                   />
                   <p className="text-md w-[235px] font-poppins font-light text-protocolsFontColor md:text-2xl">
                     Elevated Health Protocols

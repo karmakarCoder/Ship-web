@@ -50,7 +50,7 @@ const Cruise = () => {
           </div>
           {/* all cruise info */}
 
-          <div className="flex flex-wrap items-center justify-between gap-y-12">
+          <div className="flex flex-wrap  items-center justify-between gap-y-12">
             {CruiseInfo?.map((data) => (
               <Fade direction="up" triggerOnce="true">
                 <CruiseCard
